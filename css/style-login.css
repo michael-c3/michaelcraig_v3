@@ -1,0 +1,49 @@
+/*Admin Login Styles*/
+
+body.login {
+	background: #348de5;
+	
+}
+
+.login h1 a {
+	background: url(threemodern-creative/img/newlogo.png) no-repeat;
+	background-size: 234px 69px;
+	width: 234px;
+	height: 69px; 
+	
+}
+
+.login form {
+	background: #eee;
+	padding: 40px;
+	border-radius: 10px;
+
+}
+
+.login label {
+	color: #8c8c8c;
+}
+
+.login .button-primary {
+	background: #348de5;
+	width: 100px;
+	border: none;
+}
+
+.login .button-primary:hover {
+	background: #206fbd;
+}
+
+body.login div#login p#nav a, 
+body.login div#login p#backtoblog a {
+	color: #fff;
+}
+
+#backtoblog {
+	display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .login h1 a {
+    background: url(http://www.threemodern.com/wp-content/themes/html5blank-master%20copy/img/logo@2x.png) no-repeat top center;
+    /* make sure to replace this! */ } }

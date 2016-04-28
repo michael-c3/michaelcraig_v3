@@ -1,0 +1,105 @@
+.box-content {
+	padding: $content-padding;
+}
+
+.blog-card-content {
+	padding: $content-padding + 5%;
+	
+	
+	
+	.blog-card-title {
+		margin-bottom: 8%;
+		text-decoration: underline;
+	}
+	
+	.home-post-title {
+		margin-bottom: 6%;
+		font-size: 1.35em;
+		line-height: $line-height-base;
+	}
+	
+	.blog-link {
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		display: flex;
+		color: $primary-color;
+		justify-content: flex-end;
+		padding-top: 20px;
+		
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+
+.blog-card-home {
+	position: relative;
+	background: #fff;
+	z-index: 3;
+	width: 89%;
+	height: 250px;
+	
+	@include mobile {
+		margin:15% 0 15% 0;
+		width: 98%;
+	}
+	
+	.border {
+		position: absolute;
+		width: 20px;
+		height: 40px;
+		background: $primary-color;
+		z-index: 2;
+	}
+	
+	.tl {
+		top: -10px;
+		background: $primary-color;
+		width: 5px;
+		height: 70px;
+	}
+	
+	.tr {
+		top: -10px;
+		width: 200px;
+		height: 5px;
+	}
+	
+	.bl {
+		bottom: -10px;
+		right: -10px;
+		width: 200px;
+		height: 5px;
+	}
+	
+	.br {
+		bottom: -10px;
+		right: -10px;
+		width: 5px;
+		height: 70px;
+		
+	}
+}
+
+
+.shadow-box {
+	border-radius: 4px;
+	width: 300px;
+	height: 200px;
+	box-shadow: 0px 0px 3px 1.3px rgba(0, 0, 0, 0.12);
+	
+	.shadow-box-content {
+		padding: $content-padding + 5%;
+		
+		h3 {
+			color: $primary-color;
+			margin-bottom: 15%;
+		}
+		
+		p {
+			font-size: 1.25em;
+			padding-right: 20%;
+		}
+	}
+}

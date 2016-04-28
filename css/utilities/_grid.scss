@@ -1,0 +1,19 @@
+.flex-row {
+	display: flex;
+	
+	@include mobile {
+		flex-wrap: wrap;
+	}
+}
+
+.flex-col {
+	@extend %test-border;
+}
+
+.col-2 {
+	flex-basis: 50%;
+	
+	@include mobile {
+		flex-basis: 100%;
+	}
+}

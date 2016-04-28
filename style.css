@@ -1,0 +1,374 @@
+/*
+Theme Name: MC3 Theme  
+Theme URI: http://threemodern.com
+Description: This site was 
+Author: Michael Craig
+Author URI: http://www.threemodern.com
+Version: 2.0
+Tags: fluid-layout, responsive-layout, rtl-language-support
+
+*/
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+
+/* line 103, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*Variables*/
+.case-study .home-case-card .case-study-title {
+  font-size: 2.1875em;
+  color: #fff; }
+
+.flex-col, header .logo, header nav, .headline, .headline span {
+  border: 1px solid #fff; }
+
+.flex-row {
+  display: flex; }
+  @media only screen and (max-width: 43.75em) {
+    .flex-row {
+      flex-wrap: wrap; } }
+
+.col-2 {
+  flex-basis: 50%; }
+  @media only screen and (max-width: 43.75em) {
+    .col-2 {
+      flex-basis: 100%; } }
+
+/*media*/
+.site-bg {
+  background: #dfeffd;
+  padding: 20px; }
+  @media only screen and (max-width: 43.75em) {
+    .site-bg {
+      padding: 0; } }
+
+.color-wrapper {
+  background: #fff; }
+
+.content-wrap {
+  width: 94%;
+  margin: 0 auto; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+  a:hover {
+    color: #2597fc; }
+
+body {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  /* = 1.25vw */ }
+
+h1 {
+  font-family: "proxima-nova", sans-serif; }
+
+h2 {
+  font-family: "proxima-nova", sans-serif; }
+
+h3 {
+  font-family: "proxima-nova", sans-serif; }
+
+h4 {
+  font-family: "proxima-nova", sans-serif; }
+
+h5 {
+  font-family: "proxima-nova", sans-serif; }
+
+h6 {
+  font-family: "proxima-nova", sans-serif; }
+
+h3 {
+  font-size: 1.5625em; }
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 2% 1% 3% 1%; }
+  header .logo {
+    flex-basis: 50%; }
+  header nav {
+    flex-basis: 50%; }
+    header nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      header nav ul li {
+        padding: 0 7% 0 0;
+        font-size: 18px; }
+
+.contact-boxes {
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto; }
+  .contact-boxes .shadow-box {
+    margin-bottom: 15%; }
+
+.box-content {
+  padding: 3%; }
+
+.blog-card-content {
+  padding: 8%; }
+  .blog-card-content .blog-card-title {
+    margin-bottom: 8%;
+    text-decoration: underline; }
+  .blog-card-content .home-post-title {
+    margin-bottom: 6%;
+    font-size: 1.35em;
+    line-height: 1.5em; }
+  .blog-card-content .blog-link {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    color: #2597fc;
+    justify-content: flex-end;
+    padding-top: 20px; }
+    .blog-card-content .blog-link:hover {
+      color: #ffffff; }
+
+.blog-card-home {
+  position: relative;
+  background: #fff;
+  z-index: 3;
+  width: 89%;
+  height: 250px; }
+  @media only screen and (max-width: 43.75em) {
+    .blog-card-home {
+      margin: 15% 0 15% 0;
+      width: 98%; } }
+  .blog-card-home .border {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #2597fc;
+    z-index: 2; }
+  .blog-card-home .tl {
+    top: -10px;
+    background: #2597fc;
+    width: 5px;
+    height: 70px; }
+  .blog-card-home .tr {
+    top: -10px;
+    width: 200px;
+    height: 5px; }
+  .blog-card-home .bl {
+    bottom: -10px;
+    right: -10px;
+    width: 200px;
+    height: 5px; }
+  .blog-card-home .br {
+    bottom: -10px;
+    right: -10px;
+    width: 5px;
+    height: 70px; }
+
+.shadow-box {
+  border-radius: 4px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 3px 1.3px rgba(0, 0, 0, 0.12); }
+  .shadow-box .shadow-box-content {
+    padding: 8%; }
+    .shadow-box .shadow-box-content h3 {
+      color: #2597fc;
+      margin-bottom: 15%; }
+    .shadow-box .shadow-box-content p {
+      font-size: 1.25em;
+      padding-right: 20%; }
+
+.headline {
+  margin-bottom: 6%;
+  display: flex;
+  flex-wrap: wrap; }
+  .headline p {
+    padding: 2% 0 0 0;
+    flex-basis: 100%;
+    order: 3;
+    font-size: 1.35em;
+    line-height: 1.5em; }
+  .headline span {
+    flex-basis: 20%;
+    order: 2;
+    color: #2597fc;
+    font-family: "freight-sans-pro", sans-serif;
+    font-weight: 500;
+    font-size: 18px; }
+    @media only screen and (max-width: 43.75em) {
+      .headline span {
+        order: 2;
+        flex-basis: 100%;
+        margin-bottom: 10%; } }
+  .headline h1 {
+    font-size: 7.5em;
+    /*font-size: 9.375vw;*/
+    flex-basis: 70%; }
+    @media only screen and (max-width: 43.75em) {
+      .headline h1 {
+        font-size: 90px;
+        margin-bottom: 4%; } }
+
+.case-study {
+  margin-bottom: 6%; }
+  .case-study .home-case-card {
+    background: #2597fc;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 300px; }
+    .case-study .home-case-card .case-study-title {
+      margin-bottom: 6%;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s; }
+    .case-study .home-case-card .case-study-info {
+      padding: 3%;
+      width: 40%;
+      height: 300px;
+      box-shadow: inset 0 0 0 0 #000000;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+      transition: all 0.5s ease 0s; }
+      .case-study .home-case-card .case-study-info:hover {
+        box-shadow: inset 500px 0 0 0 rgba(53, 53, 53, 0.88);
+        color: #FFF; }
+      .case-study .home-case-card .case-study-info:hover .case-study-title {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s; }
+      .case-study .home-case-card .case-study-info:hover .case-study-tags {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s; }
+      .case-study .home-case-card .case-study-info .case-study-tags {
+        -webkit-transform: translateY(600%);
+        -moz-transform: translateY(600%);
+        -ms-transform: translateY(600%);
+        -o-transform: translateY(600%);
+        transform: translateY(600%);
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        margin-bottom: 6%; }
+      .case-study .home-case-card .case-study-info .case-study-button {
+        font-family: "proxima-nova", sans-serif;
+        color: #2597fc;
+        display: flex;
+        justify-content: flex-end;
+        padding: 50px; }
+
+.blog-contact .box-content h3 {
+  margin-bottom: 8%; }
+.blog-contact .box-content p {
+  margin-bottom: 6%;
+  font-size: 1.30em;
+  line-height: 1.5em; }
+.blog-contact .box-content .contact-link {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500; }
+.blog-contact .box-content a {
+  padding: 10px 15px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background: #44c318;
+  color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+  .blog-contact .box-content a:hover {
+    background: #30af04;
+    color: #fff; }

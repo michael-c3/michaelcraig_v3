@@ -1,0 +1,42 @@
+/*Variables*/
+
+$lightblue:#dfeffd;
+$normalblue: #2597fc;
+$lightgrey: #eceff1;
+$green: #44c318;
+
+$primary-color:$normalblue;
+$secondary-color:$lightgrey;
+
+$color-site-background: $lightblue;
+$button-background-green:$green;
+
+$headline-size:7.5em;
+$headline-size-mobile:90px;
+$tagline-size: 1.35em;
+
+$content-padding: 3%;
+
+$home-cs-title-size: 2.1875em;
+
+$line-height-base: 1.5em;
+
+%home-cs-title {
+	font-size: $home-cs-title-size;
+	color: #fff;
+}
+
+
+%display-flex{
+	display: flex;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -o-flex;
+}
+
+
+%test-border {
+	border: 1px solid #fff;
+}
+

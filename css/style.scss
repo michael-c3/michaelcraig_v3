@@ -1,0 +1,27 @@
+/*
+Theme Name: MC3 Theme  
+Theme URI: http://threemodern.com
+Description: This site was 
+Author: Michael Craig
+Author URI: http://www.threemodern.com
+Version: 2.0
+Tags: fluid-layout, responsive-layout, rtl-language-support
+
+*/
+@import 'stylesheets/print';
+@import 'stylesheets/screen';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/grid';
+@import 'utilities/media_queries';
+@import 'objects/typography';
+@import 'objects/header';
+@import 'objects/footer';
+@import 'objects/layout';
+@import 'objects/forms';
+@import 'objects/elements';
+@import 'pages/home';
+
+
+
+
